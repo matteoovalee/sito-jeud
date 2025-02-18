@@ -432,7 +432,7 @@ a:focus,a:hover {
 .slide-in-right {
     opacity: 0;
     transform: translateX(100%);
-    transition: opacity 1s ease 1s,transform 1s ease 1s
+    transition: opacity 1s ease .5s,transform 1s ease .5s
 }
 
 .slide-in-left.visible,.slide-in-right.visible {
@@ -500,38 +500,48 @@ a:focus,a:hover {
     font-size: 15px
 }
 
-.offer_section .row>div,.shop_section .box .new,.shop_section .btn-box {
+.offer_section .row>div,.shop_section .box .new, .btn-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
 }
 
-.shop_section .box .new,.shop_section .btn-box {
+.shop_section .box .new, .btn-box {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center
 }
 
-.shop_section .btn-box {
+.btn-box {
     margin-top: 45px
 }
 
-.about_section .detail-box a,.shop_section .btn-box a {
+.about_sectionC .btn-box{
+  -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left
+}
+
+.about_section .detail-box a,.btn-box a {
     display: inline-block;
     border: 1px solid var(--primary-color);
     transition: all .2s
 }
 
-.shop_section .btn-box a {
+.btn-box a {
     padding: 10px 40px;
     background-color: var(--primary-color);
     color: var(--text-color);
     border-radius: 5px
 }
 
+.about_section .detail-box .btn-box a{
+    border-radius: 5px;
+}
+
 /* About */
 
-.about_section .detail-box a:hover,.about_sectionC .btn-primary:hover,.info_section .info_form form button:hover,.shop_section .btn-box a:hover {
+.about_section .detail-box a:hover,.btn-primary:hover,.info_section .info_form form button:hover,.btn-box a:hover {
     background-color: transparent;
     color: var(--primary-color)
 }
@@ -615,16 +625,6 @@ a:focus,a:hover {
     font-size: 1rem;
     color: #c3c0c0;
     line-height: 1.6
-}
-
-.about_sectionC .btn-primary {
-    background-color: var(--primary-color);
-    padding: 10px 30px;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: background-color .3s ease;
-    border-radius: 0;
-    border: 1px solid var(--primary-color)
 }
 
 /* Network */
@@ -1072,6 +1072,25 @@ a:focus,a:hover {
 
 /* Contact Page */
 
+.contact_section .btn-primary, .apply_section .btn-primary {
+  padding: 10px 45px; /* Stesso padding del pulsante in index.html */
+  border: 1px solid var(--primary-color);
+  transition: all 0.2s;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-radius: 5px; /* Puoi modificarlo se necessario */
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.contact_section .btn-primary:hover, .apply_section .btn-primary:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+
 .contact_section {
     padding: 90px 0;
     background-color: var(--background-color);
@@ -1093,7 +1112,7 @@ a:focus,a:hover {
 
 .contact_section .heading_container p {
     font-size: 1.1rem;
-    color: #666
+    color: var(--text-color)
 }
 
 .contact_section .form-group {
@@ -1117,7 +1136,7 @@ a:focus,a:hover {
     box-shadow: 0 0 5px rgba(99,21,255,.3)
 }
 
-.contact_section .btn-primary {
+.btn-primary {
     background-color: var(--primary-color);
     padding: 10px 30px;
     font-size: 1rem;
@@ -1125,11 +1144,6 @@ a:focus,a:hover {
     transition: background-color .3s ease;
     border-radius: 0;
     border: 1px solid var(--primary-color)
-}
-
-.contact_section .btn-primary:hover {
-    background-color: transparent;
-    color: var(--primary-color)
 }
 
 /* Apply */
@@ -1152,7 +1166,7 @@ a:focus,a:hover {
 
 .apply_section .heading_container p {
     font-size: 1.1rem;
-    color: #666;
+    color: var(--text-color);
     font-family: "Poppins",sans-serif
 }
 
@@ -1168,21 +1182,83 @@ a:focus,a:hover {
 }
 
 .apply_section .form-control:focus {
-    border-color: var(--primary-color);
-    box-shadow: 0 0 5px rgba(99,21,255,.3)
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(99,21,255,.3)
 }
 
-.apply_section .btn-primary {
-    background-color: var(--primary-color);
-    padding: 10px 30px;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: background-color .3s ease;
-    border-radius: 0;
-    border: 1px solid var(--primary-color)
+
+/* Services Page */
+/* Services Section */
+.services_section {
+  padding: 90px 0;
+  background-color: var(--background-color);
 }
 
-.apply_section .btn-primary:hover {
-    background-color: transparent;
-    color: var(--primary-color)
+.services_section .heading_container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services_section .heading_container h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.services_section .heading_container p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+.services_section .service_box {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.services_section .service_box:hover {
+  transform: translateY(-10px);
+}
+
+.services_section .img-box img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.services_section .detail-box h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.services_section .detail-box p {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 767.98px) {
+  .services_section .service_box {
+    margin-bottom: 20px; /* Add spacing between service boxes */
+  }
+
+  .services_section .img-box img {
+    width: 80px; /* Smaller icons on mobile */
+    height: 80px;
+  }
+
+  .services_section .detail-box h4 {
+    font-size: 1.3rem; /* Smaller heading on mobile */
+  }
+
+  .services_section .detail-box p {
+    font-size: 0.9rem; /* Smaller text on mobile */
+  }
 }
