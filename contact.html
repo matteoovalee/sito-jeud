@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="icon" href="images/JEUD2.png" type="image/gif" />
   <title>Contattaci - JEUD</title>
   <!-- Bootstrap CSS -->
@@ -11,24 +11,29 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- Header Section -->
+  <!-- header section -->
   <header class="header_section">
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg custom_nav-container">
         <a class="navbar-brand" href="index.html">
-            <img src="images/JEUD2.png" alt="JEUD Logo" class="navbar-logo">
-            <span>
-                JEUD
-            </span>
+          <img src="images/JEUD2.png" alt="JEUD Logo" class="navbar-logo">
+          <span>JEUD</span>
         </a>
-        <div class="nav_container">
-          <a href="index.html">Home</a>
-          <a href="about.html">Chi Siamo</a>
-          <a href="services.html">Servizi</a>
-          <a href="contact.html">Contattaci</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="nav_container ml-auto">
+            <a href="index.html">Home</a>
+            <a href="about.html">Chi Siamo</a>
+            <a href="services.html">Servizi</a>
+            <a href="contact.html">Contattaci</a>
+          </div>
         </div>
       </nav>
     </div>
