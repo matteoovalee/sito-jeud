@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/JEUD2.png" type="image/gif" />
+  <title>Contattaci - JEUD</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- FontAwesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/JEUD2.png" alt="JEUD Logo" class="navbar-logo">
+            <span>
+                JEUD
+            </span>
+        </a>
+        <div class="nav_container">
+          <a href="index.html">Home</a>
+          <a href="about.html">Chi Siamo</a>
+          <a href="services.html">Servizi</a>
+          <a href="contact.html">Contattaci</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Form Section -->
+  <section class="contact_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>Contattaci</h2>
+        <p>Compila il modulo per inviarci un messaggio.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="name">Nome / Azienda</label>
+              <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Messaggio</label>
+              <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">Invia</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apply Section for Students -->
+  <section class="apply_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>Vuoi Unirti a Noi?</h2>
+        <p>Se sei uno studente e vuoi far parte del team JEUD, inviaci la tua candidatura.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="student_name">Nome e Cognome</label>
+              <input type="text" id="student_name" name="student_name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="student_email">Email</label>
+              <input type="email" id="student_email" name="student_email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="student_cv">Carica il tuo CV (PDF)</label>
+              <input type="file" id="student_cv" name="student_cv" class="form-control" accept=".pdf" required>
+            </div>
+            <div class="form-group">
+              <label for="student_message">Messaggio (opzionale)</label>
+              <textarea id="student_message" name="student_message" class="form-control" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">Invia Candidatura</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- info section -->
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row info_form_social_row">
+        <div class="col-md-6 col-lg-3">
+          <h4>
+            Seguici sui social!
+          </h4>
+          <div class="info_contact">
+            <a href="https://www.instagram.com/jeud_udine/">
+              <img src="images/instagram.png" class="icona">
+              <span>
+                &nbsp&nbsp Instagram
+              </span>
+            </a>
+            <a href="https://www.linkedin.com/company/jeud-udine/">
+              <img src="images/linkedin.png" class="icona">
+              <span>
+                &nbsp&nbsp Linkedin
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3"></div>
+        <div class="col-md-6 col-lg-3"></div>
+
+        <div class="col-md-6 col-lg-3">
+          <h4>
+            Per maggiori informazioni
+          </h4>
+          <div class="info_contact">
+            <a href="mailto:info@jeud.it">
+              <img src="images/email.png" class="icona">
+              <span>
+                &nbsp&nbsp info@jeud.it
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+        <div class="info_contact copyright">
+          <p>
+            &copy;2025 JEUD. Tutti i diritti riservati. &nbsp
+            <a href="https://www.iubenda.com/privacy-policy/55034616/legal">
+              Privacy & Cookie Policy
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+  <!-- JavaScript -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+</html>
