@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>Chi Siamo - JEUD</title>
   <link rel="icon" href="images/JEUD2.png" type="image/gif" />
   <!-- Bootstrap CSS -->
@@ -11,9 +11,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
 </head>
 <body>
-  <!-- Header Section -->
+
+  <!-- header section -->
   <header class="header_section">
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg custom_nav-container">
@@ -28,13 +31,14 @@
           <div class="nav_container ml-auto">
             <a href="index.html">Home</a>
             <a href="about.html">Chi Siamo</a>
-            <a href="shop.html">Servizi</a>
+            <a href="services.html">Servizi</a>
             <a href="contact.html">Contattaci</a>
           </div>
         </div>
       </nav>
     </div>
   </header>
+  <!--  header section -->
 
   <!-- About Section -->
   <section class="about_sectionC layout_padding">
@@ -58,7 +62,11 @@
             <p>
               JEUD fa parte di un vasto network di Junior Enterprise, sia a livello nazionale che internazionale. Collaboriamo con altre JE per condividere conoscenze, risorse e opportunità, garantendo un impatto sempre maggiore.
             </p>
-            <a href="contact.html" class="btn btn-primary">Unisciti a Noi</a>
+            <div class="btn-box">
+              <a href="contact.html">
+                Unisciti a Noi
+              </a>
+            </div>
           </div>
         </div>
         <div class="col-md-6 order-md-2 order-1">
@@ -166,5 +174,11 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/custom.js"></script>
+
+  <!-- Back to Top Arrow -->
+  <div id="backToTop" class="back-to-top">
+    <i class="fas fa-arrow-up"></i> <!-- FontAwesome arrow icon -->
+  </div>
+  
 </body>
 </html>
