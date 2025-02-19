@@ -1,9 +1,12 @@
-@media (max-width: 1300px) {}
+@media (max-width: 1300px) {
+  /* Add specific styles for 1300px and below if needed */
+}
 
-@media (max-width: 1120px) {}
+@media (max-width: 1120px) {
+  /* Add specific styles for 1120px and below if needed */
+}
 
 @media (max-width: 992px) {
-
   .slider_section {
     min-height: auto;
   }
@@ -12,16 +15,15 @@
     padding: 90px 0 75px 0;
   }
 
-  .info_main_row>div:nth-child(1) {
-    margin-bottom: 25px;
-  }
-
-  .info_main_row>div:nth-child(2) {
+  .info_main_row > div:nth-child(1),
+  .info_main_row > div:nth-child(2) {
     margin-bottom: 25px;
   }
 }
 
-@media (max-width: 800px) {}
+@media (max-width: 800px) {
+  /* Add specific styles for 800px and below if needed */
+}
 
 @media (max-width: 768px) {
   .slider_section .detail-box h1 {
@@ -34,7 +36,6 @@
 
   .about_section .img-box {
     margin-bottom: 45px;
-
   }
 
   .contact_section .form_container {
@@ -56,15 +57,14 @@
     margin-bottom: 25px;
   }
 
-  .info_main_row>div {
+  .info_main_row > div {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-
   }
 
-  .info_main_row>div:not(:nth-last-child(1)) {
+  .info_main_row > div:not(:nth-last-child(1)) {
     margin-bottom: 25px;
   }
 
@@ -78,7 +78,6 @@
     flex-direction: column;
     align-items: center;
   }
-
 }
 
 @media (max-width: 576px) {
@@ -90,7 +89,6 @@
     margin-right: 0;
     margin-bottom: 10px;
   }
-
 }
 
 @media (max-width: 480px) {
@@ -104,7 +102,9 @@
   }
 }
 
-@media (max-width: 420px) {}
+@media (max-width: 420px) {
+  /* Add specific styles for 420px and below if needed */
+}
 
 @media (max-width: 376px) {
   .slider_section .detail-box h1 {
@@ -118,69 +118,87 @@
   }
 }
 
-@media (max-width:991.98px) {
+@media (max-width: 991.98px) {
   .navbar-toggler {
-      border: 0;
-      outline: 0
+    border: 0;
+    outline: 0;
   }
 
   .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
 
   .nav_container {
-      background-color: var(--secondary-color);
-      padding: 10px
+    background-color: var(--secondary-color);
+    padding: 10px;
   }
 
   .nav_container a {
-      display: block;
-      margin: 10px 0;
-      text-align: center
+    display: block;
+    margin: 10px 0;
+    text-align: center;
   }
 }
 
-@media (max-width:767.98px) {
+@media (max-width: 767.98px) {
   .about_section .img-box {
-      margin-bottom: 20px
+    margin-bottom: 20px;
   }
 
   .about_section .detail-box {
-      padding-left: 0;
-      text-align: center
+    padding-left: 0;
+    text-align: center;
   }
 
   .about_section .btn-primary {
-      width: 100%
+    width: 100%;
   }
 
   .network_section .network_box {
-      margin-bottom: 20px
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .layout_padding {
+    padding: 30px 0;
+  }
+
+  .heading_container {
+    margin-bottom: 20px;
   }
 }
 
-@media (max-width:767.98px) {
-    h1 {
-        font-size: 2rem
-    }
+/* Responsive Styles */
+@media (max-width: 767.98px) {
+  .services_section .service_box {
+    margin-bottom: 20px;
+  }
 
-    h2 {
-        font-size: 1.8rem
-    }
+  .services_section .img-box img {
+    width: 80px;
+    height: 80px;
+  }
 
-    h3 {
-        font-size: 1.5rem
-    }
+  .services_section .detail-box h4 {
+    font-size: 1.3rem;
+  }
 
-    p {
-        font-size: .9rem
-    }
-
-    .layout_padding {
-        padding: 30px 0
-    }
-
-    .heading_container {
-        margin-bottom: 20px
-    }
+  .services_section .detail-box p {
+    font-size: 0.9rem;
+  }
 }
