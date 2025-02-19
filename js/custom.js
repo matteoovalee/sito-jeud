@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector(".header_section");
   let prevScrollPos = window.scrollY;
 
-  if (backToTop && header) { // Check if both elements exist
     // Show/hide the arrow and navbar based on scroll position
     window.onscroll = function () {
       const currentScrollPos = window.scrollY;
@@ -54,8 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
       observer.observe(element);
     });
 
-
-  }
 });
 
 
