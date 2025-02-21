@@ -176,13 +176,13 @@ h1, h2 {
 }
 
 .navbar {
-  padding: 10px 0; /* Consistent padding */
+  padding: 10px 0;
   margin: 0;
 }
 
 .nav_container {
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  margin: 0;
+  padding: 0;
 }
 
 /* Slider */
@@ -604,8 +604,8 @@ h1, h2 {
 .info_section {
   background-color: var(--secondary-color);
   color: var(--text-color);
-  padding: 45px 0 0; /* Remove bottom padding */
-  margin-bottom: 0; /* Ensure no margin */
+  padding: 45px 0 0;
+  margin-bottom: 0;
   position: relative;
   z-index: 1;
 }

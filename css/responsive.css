@@ -1,9 +1,9 @@
 @media (max-width: 1300px) {
-  /* Add specific styles for 1300px and below if needed */
+  /* se serve */
 }
 
 @media (max-width: 1120px) {
-  /* Add specific styles for 1120px and below if needed */
+  /* se serve */
 }
 
 @media (max-width: 992px) {
@@ -22,7 +22,7 @@
 }
 
 @media (max-width: 800px) {
-  /* Add specific styles for 800px and below if needed */
+  /* se serve */
 }
 
 @media (max-width: 768px) {
@@ -103,7 +103,7 @@
 }
 
 @media (max-width: 420px) {
-  /* Add specific styles for 420px and below if needed */
+  /* se serve */
 }
 
 @media (max-width: 376px) {
@@ -181,11 +181,7 @@
   .heading_container {
     margin-bottom: 20px;
   }
-  
-}
 
-/* Responsive Styles */
-@media (max-width: 767.98px) {
   .services_section .service_box {
     margin-bottom: 20px;
   }
@@ -202,4 +198,5 @@
   .services_section .detail-box p {
     font-size: 0.9rem;
   }
+  
 }
