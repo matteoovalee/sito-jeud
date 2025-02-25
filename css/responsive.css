@@ -104,11 +104,11 @@
   }
 
   .team_grid {
-    grid-template-columns: 1fr; /* 1 column for mobile */
+    grid-template-columns: 1fr;
   }
 
   .filter_button {
-    flex: 1 1 100%; /* Full width buttons on mobile */
+    flex: 1 1 100%;
     margin: 5px 0;
   }
 }
@@ -226,4 +226,35 @@
     font-size: 0.9rem;
   }
   
+  .privacy-banner {
+    height: 100px;
+    bottom: 10px;
+    width: 90%;
+    max-width: 400px;
+    padding: 8px 15px;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 20px;
+  }
+
+  .privacy-banner p {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .privacy-banner button {
+    padding: 5px 12px;
+    font-size: 0.7rem;
+    border-radius: 15px;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateX(-50%) translateY(0);
+    }
+    50% {
+      transform: translateX(-50%) translateY(-3px);
+    }
+  }
+
 }

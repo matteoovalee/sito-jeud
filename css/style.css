@@ -1058,25 +1058,25 @@ h1, h2 {
 .privacy-banner {
   height: 60px;
   position: fixed;
-  bottom: 20px; /* Position above the bottom */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Center horizontally */
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: var(--secondary-color);
   color: var(--text-color);
   padding: 10px 20px;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
-  gap: 15px; /* Space between text and button */
-  border-radius: 25px; /* Rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Floating effect */
-  z-index: 10000; /* Ensure it's above other content */
-  animation: float 3s ease-in-out infinite; /* Floating animation */
+  gap: 15px;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+  animation: float 3s ease-in-out infinite;
 }
 
 .privacy-banner p {
   margin: 0;
-  font-size: 0.8rem; /* Smaller text */
+  font-size: 0.8rem;
 }
 
 .privacy-banner a {
@@ -1089,9 +1089,9 @@ h1, h2 {
   color: var(--text-color);
   border: none;
   padding: 6px 15px;
-  border-radius: 20px; /* Rounded button */
+  border-radius: 20px;
   cursor: pointer;
-  font-size: 0.8rem; /* Smaller text */
+  font-size: 0.8rem;
   transition: background-color 0.3s ease;
   margin: 0 auto;
 }
