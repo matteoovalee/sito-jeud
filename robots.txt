@@ -1,0 +1,12 @@
+# robots.txt for jeud.it
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+Disallow: /cgi-bin/
+
+# Allow access to sitemap
+Allow: /sitemap.xml
+
+# Sitemap location
+Sitemap: https://jeud.it/sitemap.xml

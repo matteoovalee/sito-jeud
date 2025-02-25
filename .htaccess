@@ -1,5 +1,0 @@
-# Custom 404 Error Page
-ErrorDocument 404 /404.html
-
-# Per directory non esistenti
-DirectorySlash Off

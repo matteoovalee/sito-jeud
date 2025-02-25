@@ -19,6 +19,19 @@
   .info_main_row > div:nth-child(2) {
     margin-bottom: 25px;
   }
+
+  .team_grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+
+  .team_filter {
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  }
+
+  .filter_button {
+    flex: 1 1 45%; /* Two buttons per row */
+    margin: 5px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -88,6 +101,15 @@
   .info_section .info_insta .insta_box .img-box {
     margin-right: 0;
     margin-bottom: 10px;
+  }
+
+  .team_grid {
+    grid-template-columns: 1fr; /* 1 column for mobile */
+  }
+
+  .filter_button {
+    flex: 1 1 100%; /* Full width buttons on mobile */
+    margin: 5px 0;
   }
 }
 

@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 
+    //=============================================================\\
     //Slide In Animation
     const slideInLeftElements = document.querySelectorAll(".slide-in-left");
     const slideInRightElements = document.querySelectorAll(".slide-in-right");
@@ -53,6 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
       observer.observe(element);
     });
 
+    
+
+    
 });
 
 // lightbox gallery
