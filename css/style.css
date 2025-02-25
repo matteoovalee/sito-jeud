@@ -1054,7 +1054,61 @@ h1, h2 {
   transform: translateY(-10px);
 }
 
+/* Privacy Policy Banner */
+.privacy-banner {
+  height: 60px;
+  position: fixed;
+  bottom: 20px; /* Position above the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Space between text and button */
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Floating effect */
+  z-index: 10000; /* Ensure it's above other content */
+  animation: float 3s ease-in-out infinite; /* Floating animation */
+}
 
+.privacy-banner p {
+  margin: 0;
+  font-size: 0.8rem; /* Smaller text */
+}
+
+.privacy-banner a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.privacy-banner button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 6px 15px;
+  border-radius: 20px; /* Rounded button */
+  cursor: pointer;
+  font-size: 0.8rem; /* Smaller text */
+  transition: background-color 0.3s ease;
+  margin: 0 auto;
+}
+
+.privacy-banner button:hover {
+  background-color: rgba(99, 21, 255, 0.9);
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-5px); /* Slight upward movement */
+  }
+}
 
 /* Debug Cose 
 * {

@@ -54,7 +54,22 @@ document.addEventListener("DOMContentLoaded", function () {
       observer.observe(element);
     });
 
-    
+
+    //=============================================================\\
+    //Privacy Policy Banner
+    const privacyBanner = document.getElementById("privacy-banner");
+    const acceptButton = document.getElementById("accept-privacy");
+
+    // Check if the user has already accepted the privacy policy
+    if (!localStorage.getItem("privacyAccepted")) {
+      privacyBanner.style.display = "flex"; // Show the banner
+    }
+
+    // Hide the banner when the button is clicked
+    acceptButton.addEventListener("click", () => {
+      privacyBanner.style.display = "none"; // Hide the banner
+      localStorage.setItem("privacyAccepted", "true"); // Save acceptance in localStorage
+    });
 
     
 });
