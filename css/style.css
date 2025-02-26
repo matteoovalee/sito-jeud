@@ -910,6 +910,12 @@ h1, h2 {
   transform: translateY(-10px);
 }
 
+.service_box .icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
 .services_section .img-box img {
   width: 100px;
   height: 100px;
@@ -1108,6 +1114,56 @@ h1, h2 {
   50% {
     transform: translateX(-50%) translateY(-5px); /* Slight upward movement */
   }
+}
+
+/* Policy Section */
+.policy_section {
+  padding: 90px 0;
+  background-color: var(--background-color);
+}
+
+.policy_section .heading_container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.policy_section .heading_container h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.policy_content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.policy_item {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.policy_item .icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.policy_item h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.policy_item p {
+  font-size: 1rem;
+  color: #c3c0c0;
+  line-height: 1.6;
+}
+
+.policy_item a {
+  color: var(--primary-color);
+  text-decoration: underline;
 }
 
 /* Debug Cose 
