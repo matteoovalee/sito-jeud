@@ -71,6 +71,47 @@ document.addEventListener("DOMContentLoaded", function () {
       localStorage.setItem("privacyAccepted", "true"); // Save acceptance in localStorage
     });
 
+    // Filter Team Members
+    const filterButtons = document.querySelectorAll(".filter_button");
+    const teamMembers = document.querySelectorAll(".team_member");
+    const teamGrid = document.querySelector(".team_grid");
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        // Remove active class from all buttons
+        filterButtons.forEach((btn) => btn.classList.remove("active"));
+        // Add active class to the clicked button
+        button.classList.add("active");
+
+        // Get the selected team
+        const selectedTeam = button.getAttribute("data-team");
+
+        // Check if the selected team is Executive, IT, Marketing, or Research
+        if (selectedTeam === "executive" || selectedTeam === "it" || selectedTeam === "marketing" || selectedTeam === "research") {
+          teamGrid.classList.add("team_grid_due"); // Aggiungi la classe per 2 colonne
+          teamGrid.classList.remove("team_grid");
+        } else {
+          teamGrid.classList.add("team_grid");
+          teamGrid.classList.remove("team_grid_due"); // Rimuovi la classe per 2 colonne
+        }
+
+        // Show/hide team members based on the selected team
+        teamMembers.forEach((member) => {
+          if (member.classList.contains(selectedTeam)) {
+            member.style.display = "block";
+            setTimeout(() => {
+              member.classList.add("visible");
+            }, 10); // Small delay to trigger the animation
+          } else {
+            member.classList.remove("visible");
+            member.style.display = "none";
+          }
+        });
+      });
+    });
+
+  // Show the General team by default
+  document.querySelector('.filter_button[data-team="executive"]').click();
     
 });
 

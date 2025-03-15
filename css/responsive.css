@@ -19,19 +19,6 @@
   .info_main_row > div:nth-child(2) {
     margin-bottom: 25px;
   }
-
-  .team_grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
-  }
-
-  .team_filter {
-    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
-  }
-
-  .filter_button {
-    flex: 1 1 45%; /* Two buttons per row */
-    margin: 5px;
-  }
 }
 
 @media (max-width: 800px) {
@@ -91,6 +78,41 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .team_grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 colonna su mobile */
+    gap: 15px; /* Riduci lo spazio tra gli elementi */
+  }
+
+  .team_grid_due {
+    grid-template-columns: repeat(1, 1fr); /* Anche per i filtri specifici, 1 colonna su mobile */
+  }
+
+  .team_member img {
+    width: 100%; /* L'immagine occupa il 100% della larghezza del contenitore */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+    max-height: 470px; /* Limita l'altezza massima per evitare immagini troppo grandi */
+    object-fit: cover; /* Assicura che l'immagine copra l'area senza distorsioni */
+    border-radius: 10px; /* Mantieni i bordi arrotondati */
+  }
+
+  .team_member .text-content {
+    top: 10px; /* Riduci la distanza dal bordo superiore */
+    left: 10px; /* Allinea il testo a sinistra */
+    transform: none; /* Rimuovi la trasformazione */
+    width: calc(100% - 20px); /* Larghezza del testo adattata al contenitore */
+    padding: 10px; /* Riduci il padding */
+    background-color: rgba(30, 30, 30, 0.9); /* Sfondo semi-trasparente */
+  }
+
+  .team_filter {
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  }
+
+  .filter_button {
+    flex: 1 1 45%; /* Two buttons per row */
+    margin: 5px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -101,10 +123,6 @@
   .info_section .info_insta .insta_box .img-box {
     margin-right: 0;
     margin-bottom: 10px;
-  }
-
-  .team_grid {
-    grid-template-columns: 1fr;
   }
 
   .filter_button {
