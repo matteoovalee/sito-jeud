@@ -86,8 +86,8 @@ document.addEventListener("DOMContentLoaded", function () {
         // Get the selected team
         const selectedTeam = button.getAttribute("data-team");
 
-        // Check if the selected team is Executive, IT, Marketing, or Research
-        if (selectedTeam === "executive" || selectedTeam === "it" || selectedTeam === "marketing" || selectedTeam === "research") {
+        // Qui quando avremo nuovi membri servirà per mantenere centrate le immagini
+        if (selectedTeam === "executive" || selectedTeam === "it" || selectedTeam === "marketing" || selectedTeam === "research" || selectedTeam === "sales") {
           teamGrid.classList.add("team_grid_due"); // Aggiungi la classe per 2 colonne
           teamGrid.classList.remove("team_grid");
         } else {
