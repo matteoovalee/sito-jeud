@@ -26,6 +26,22 @@
 }
 
 @media (max-width: 768px) {
+  .slider_section{
+    margin-top: 80px;
+  }
+
+  .about_sectionC {
+    margin-top: 120px;
+  }
+
+  .services_section {
+    margin-top: 120px;
+  }
+
+  .policy_section {
+    margin-top: 120px;
+  }
+
   .slider_section .detail-box h1 {
     font-size: 2.5rem;
   }
@@ -112,6 +128,36 @@
   .filter_button {
     flex: 1 1 45%; /* Two buttons per row */
     margin: 5px;
+  }
+
+  .recruitment-banner {
+    font-size: 1rem; /* Riduci la dimensione del font su dispositivi mobili */
+    padding: 8px 0; /* Riduci il padding su dispositivi mobili */
+  }
+
+  .recruitment_section{
+    margin-top: 80px;
+  }
+
+  .recruitment_section .service_box {
+    margin-bottom: 20px;
+  }
+
+  .recruitment_section .icon-box {
+    font-size: 2rem;
+  }
+
+  .recruitment_section .service_box h4 {
+    font-size: 1.3rem;
+  }
+
+  .recruitment_section .service_box p {
+    font-size: 0.9rem;
+  }
+
+  .recruitment_section .btn-box a {
+    padding: 8px 30px;
+    font-size: 0.9rem;
   }
 }
 

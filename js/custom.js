@@ -112,6 +112,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Show the General team by default
   document.querySelector('.filter_button[data-team="executive"]').click();
+
+  const carousel = document.querySelector(".carousel");
+  const items = document.querySelectorAll(".carousel_item");
+  let currentIndex = 0;
+
+  // Funzione per far scorrere il carosello
+  function slideCarousel() {
+    currentIndex = (currentIndex + 1) % items.length; // Passa alla prossima immagine
+    const offset = -currentIndex * 100; // Calcola l'offset per lo scorrimento
+    carousel.style.transform = `translateX(${offset}%)`;
+  }
+
+  // Avvia lo scorrimento automatico ogni 3 secondi
+  setInterval(slideCarousel, 3000);
     
 });
 

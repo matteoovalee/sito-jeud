@@ -114,7 +114,7 @@ h1, h2 {
 }
 
 .header_section.hide {
-  top: -100px;
+  top: -150px;
 }
 
 .header_section .container-fluid {
@@ -235,6 +235,27 @@ h1, h2 {
   box-shadow: 0 0 20px rgba(125, 84, 207, 0.9);
   text-decoration: none;
 }
+
+.contact_section .slider-link {
+  display: inline-block;
+  padding: 12px 50px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border-radius: 5px;
+  border: 0;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgba(99, 21, 255, 0.7);
+}
+
+.contact_section .slider-link:hover {
+  background-color: rgba(125, 84, 207, 0.9);
+  box-shadow: 0 0 20px rgba(125, 84, 207, 0.9);
+  text-decoration: none;
+}
+
 
 .slider_section .slider_bg_box {
   position: absolute;
@@ -385,6 +406,7 @@ h1, h2 {
 .about_sectionC, .network_section {
   padding: 90px 0;
   background-color: var(--background-color);
+  margin-top: 80px;
 }
 
 .about_sectionC .heading_container {
@@ -794,6 +816,16 @@ h1, h2 {
 }
 
 /* Contact Page */
+.contact_section{
+  margin-top: 80px;
+  min-height: 82vh;
+
+}
+
+.contact_section .container{
+  margin-top: 120px;
+}
+
 .contact_section, .apply_section {
   padding: 90px 0;
   background-color: var(--background-color);
@@ -803,6 +835,7 @@ h1, h2 {
 .contact_section .heading_container, .apply_section .heading_container {
   text-align: center;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .contact_section .heading_container h2, .contact_section .heading_container h1, .apply_section .heading_container h2, .apply_section .heading_container h1 {
@@ -878,6 +911,7 @@ h1, h2 {
   padding: 90px 0;
   background-color: var(--background-color);
   flex: 1;
+  margin-top: 80px;
 }
 
 .services_section .heading_container {
@@ -1230,6 +1264,126 @@ h1, h2 {
 .policy_item a {
   color: var(--primary-color);
   text-decoration: underline;
+}
+
+/* Recruitment Banner */
+.recruitment-banner {
+  width: 100%;
+  background-color: var(--primary-color); /* Usa il colore primario del tuo tema */
+  color: var(--text-color); /* Usa il colore del testo definito nel tuo tema */
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1001; /* Assicurati che sia sopra il header */
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recruitment-banner p {
+  margin: 0;
+}
+
+/* Recruitment Banner */
+.header_section .recruitment-banner {
+  top: 0; /* Lo mantiene in cima alla pagina */
+  z-index: 998; /* Assicurati che sia sotto la navbar (se la navbar ha z-index: 1000) */
+}
+
+.recruitment-banner a {
+  color: var(--text-color); /* Usa il colore del testo definito nel tuo tema */
+  text-decoration: none;
+}
+
+.recruitment-banner a:hover {
+  color: var(--background-color); /* Usa il colore di sfondo definito nel tuo tema */
+}
+
+/* Recruitment Section */
+.recruitment_section {
+  min-height: 72vh;
+  margin-top: 20px;
+  padding: 90px 0;
+  background-color: var(--background-color);
+}
+
+.recruitment_section .heading_container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.recruitment_section .heading_container h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.recruitment_section .heading_container p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+.recruitment_section .service_box {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.recruitment_section .service_box:hover {
+  transform: translateY(-10px);
+}
+
+.recruitment_section .icon-box {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.recruitment_section .service_box h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.recruitment_section .service_box p {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.recruitment_section .btn-box {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.recruitment_section .btn-box a {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+  transition: all 0.2s;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.recruitment_section .btn-box a:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.spazio{
+  margin-top: 0px;
+}
+
+.spazioSotto{
+  margin-bottom: 0px;
 }
 
 /* Debug Cose 
